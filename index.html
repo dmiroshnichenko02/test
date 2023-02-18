@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Storage Calc</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="range__block">
+            <div class="range__block_item">
+                <label for="storage" class="storage__label"> Storage: 100 GB</label>
+                <input type="range" name="storage" id="storage" min="0" max="1000" step="1" value="100" class="range">
+            </div>
+            <div class="range__block_item">
+                <label for="transfer" class="transfer__label"> Transfer: 400 GB</label>
+                <input type="range" name="transfer" id="transfer" min="0" max="1000" step="1" value="400" class="range">
+            </div>
+        </div>
+        <div class="cost__block">
+            <div class="cost__item cost__item_1">
+                <div class="cost__title">backblaze</div>
+                <img src="./img/backblaze.svg" alt="backblaze">
+                <div class="cost__range">
+                    <div class="range__item" id="backblaze"></div>
+                    <span class="range__cost_blackblaze"></span>
+                </div>
+                <div class="cost__graph cost__graph_backblaze">
+                    <span id="backblaze_cost">5$</span>
+                </div>
+            </div>
+            <div class="cost__item cost__item_2">
+                <div class="checkbox">
+                    <div class="cost__title">bunny</div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="hdd" id="hdd" class="check" checked>
+                    <label for="hdd" class="check__title">HDD</label>
+                    <input type="checkbox" name="ssd" id="ssd" class="check">
+                    <label for="ssd" class="check__title">SSD</label>
+                    </div>
+                </div>
+                <img src="./img/bunny.svg" alt="bunny">
+                <div class="cost__range">
+                    <div class="range__item" id="bunny"></div>
+                    <span class="range__cost_bunny"></span>
+                </div>
+                <div class="cost__graph cost__graph_bunny">
+                    <span id="bunny_cost">5$</span>
+                </div>
+            </div>
+            <div class="cost__item cost__item_3">
+                <div class="checkbox">
+                    <div class="cost__title">scaleway</div>
+                    <input type="checkbox" name="multy" id="multy" class="check" checked>
+                    <label for="multy" class="check__title">Multy</label>
+                    <input type="checkbox" name="single" id="single" class="check">
+                    <label for="single" class="check__title">Single</label>
+                </div>
+                <img src="./img/scale.svg" alt="scaleway">
+                <div class="cost__range">
+                    <div class="range__item" id="scaleway"></div>
+                    <span class="range__cost_scaleway"></span>
+                </div>
+                <div class="cost__graph cost__graph_scaleway">
+                    <span id="scaleway_cost">5$</span>
+                </div>
+            </div>
+            <div class="cost__item cost__item_4">
+                <div class="cost__title">vultr</div>
+                <img src="./img/vultr-seeklogo.com.svg" alt="vultr">
+                <div class="cost__range">
+                    <div class="range__item" id="vultr"></div>
+                    <span class="range__cost_vultr"></span>
+                </div>
+                <div class="cost__graph cost__graph_vultr">
+                    <span id="vultr_cost">5$</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
